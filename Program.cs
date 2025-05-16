@@ -14,7 +14,10 @@ namespace CybersecurityAwarenessBot
             Console.ResetColor();
             Console.Write("\nEnter your name: ");
             string userName = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine($"\nWelcome, {userName}! Let's keep you safe online.");
+            Console.ResetColor();
+            Console.WriteLine("\nYou can ask me about password safety, phishing, or safe browsing.");
         }
 
         static void PlayVoiceGreeting()
